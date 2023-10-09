@@ -184,7 +184,6 @@ span{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
 }
 
-
 .card .head{
     width: 150px;
     margin-bottom: 10px;
@@ -411,6 +410,5 @@ button{
       .footer .social{
         padding: 10px;
     }
-
 
 }
