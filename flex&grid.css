@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Poppins:ital,wght@1,200&display=swap');
+
+:root{
+    --primary-color:red;
+}
+/*Universal styles*/
+*{
+    padding: 0;
+    margin: 0;
+}   
+
+body{
+    background-image: url("backgrond.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+h1{
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2{
+    color: #fff;
+    font-weight: 200;
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: white;
+}
+
+span{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+/*Navbar*/
+.navbar{
+    height: 70px;
+    margin: auto;
+}
+
+.navbar nav, .navbar ul, .navbar .srch{
+    display: flex;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin: 0 5px;
+    padding: 20px 20px;
+}
+
+.navbar a{
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+}
+
+.navbar .logo{
+    display: flex;
+    margin: 0 80px;
+    padding: 20px 20px;
+}
+
+.navbar .logo i{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.navbar a:hover{
+    color: var(--primary-color);
+}
+
+.navbar .srch{
+    margin-top: 13px;
+    margin-left: 200px;
+}
+.srch input{
+    border-radius: 5px;
+    border: 2px red solid;
+    width: 200px;
+    background: transparent;
+    padding: 10px;
+    height: 40px;
+    color: red;
+    font-size: 15px;
+}
+
+.srch button{
+    color: #fff;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.srch button:focus, .srch input:focus{
+    outline: none;
+}
+
+.srch button:hover{
+    color: red;
+    background-color: #fff;
+}
+
+/*Main*/
+.main{
+    margin-left: 80px;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.main .grid{
+    grid-template-columns: 2fr 1fr;
+}
+
+/*Content*/
+.content{
+    padding-right: 20px;
+}
+
+.content p
+{
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.content h2{
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.content span{
+    font-size: 50px;
+}
+
+.content button{
+    color: #333;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.content button:hover{
+    background-color: #fff;
+}
+
+.content a{
+    color: #333;
+    transform: 0.3s ease;
+}
+
+/*Card*/
+.card{
+    padding: 80px 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+}
+
+
+.card .head{
+    width: 150px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+
+.card p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.card .head a{
+    color: var(--primary-color);
+}
+
+.form-control input{
+    margin: 20px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid red;
+    width: 240px;
+    letter-spacing: 1px;
+    padding: 3px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+form .log{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+   margin: 20px 60px;
+   cursor: pointer;
+}
+form .log a{
+    color: #fff;
+}
+
+form .log a:hover{
+    color: red;
+
+}
+
+form .log:hover{
+    background: white;
+}
+
+form span{
+    cursor: pointer;
+}
+
+form span:hover{
+    text-decoration: underline;
+}
+
+.card .social{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social i{
+    padding: 5px;
+    transition:  0.2s ease-in;
+}
+
+.social i:hover{
+    color: var(--primary-color);
+    transform: translateX(-2px);
+
+}
+
+/*Footer*/
+ .footer{
+    height: 100px;
+    margin-top: 50px;
+   /* background-color: red;*/
+    color: #fff;
+    font-size: 18px;
+    
+ }
+
+ .footer .container{
+    margin: 0 200px;
+ }
+
+ .footer h1{
+     font-style: italic;
+     padding: 5px;
+ }
+
+ .footer h1:hover{
+    text-decoration: underline;
+    transform: translateY(1px);
+    cursor: pointer;
+ }
+/*Utilities*/
+.container{
+    max-width: 1100px;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+
+
+button{
+    background-color: red;
+    border: none;
+}
+
+/*Responsiveness*/
+/* Tablets and under*/
+@media(max-width:768px){
+    .navbar{
+        height: 120px;
+    }
+
+    .navbar .flex{
+       flex-direction: column;
+    }
+
+    .grid,
+    .main .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main{
+        padding-top: 80px;
+    }
+
+    .content button{
+        margin-top: 40px;
+       margin-left: 100px
+    }
+
+    .navbar .srch{
+        margin-right: 180px;
+     }
+
+
+     .navbar li{
+        font-size: 17px;
+     }
+
+     .navbar li:hover{
+        border-bottom: 1px solid red;
+        transition: 0.1s ease;
+    }
+
+}
+
+/*Mobile*/
+@media(max-width: 500px){
+    .navbar{
+        height: 200px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -50px;
+    }
+
+    .navbar li{
+        font-size: 12.4px;
+    }
+
+
+    .navbar .srch{
+       margin-right: 180px;
+       margin-top: -20px;
+    }
+
+    .footer{
+        justify-content: center;
+        align-items: center;
+       text-align: center;
+    
+    }
+      .footer .social{
+        padding: 10px;
+    }
+
+
+}
